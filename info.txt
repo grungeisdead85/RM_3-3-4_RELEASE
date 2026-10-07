@@ -1,0 +1,57 @@
+[ID:refinish_steel]
+[NUMERIC_VERSION:13]
+[DISPLAYED_VERSION:3.3.4]
+[EARLIEST_COMPATIBLE_NUMERIC_VERSION:4]
+[EARLIEST_COMPATIBLE_DISPLAYED_VERSION:3.0.0]
+[AUTHOR:grungeisdead]
+[NAME:Refinish Metal]
+[DESCRIPTION:Refinish metal bars using processed minerals, metals and precious stones.]
+[STEAM_TITLE:Refinish Metal]
+
+[STEAM_TAG:mod]
+[STEAM_TAG:metal]
+[STEAM_TAG:metals]
+[STEAM_TAG:material]
+[STEAM_TAG:inorganic]
+[STEAM_TAG:graphics]
+[STEAM_TAG:color]
+[STEAM_TAG:crafting]
+[STEAM_TAG:item]
+[STEAM_TAG:metallurgy]
+[STEAM_TAG:steel]
+[STEAM_TAG:customization]
+[STEAM_TAG:colors]
+[STEAM_TAG:smelting]
+[STEAM_TAG:rawless]
+[STEAM_TAG:utility]
+[STEAM_TAG:forge]
+[STEAM_TAG:jeweler]
+[STEAM_TAG:gem]
+[STEAM_TAG:stone]
+[STEAM_TAG:powder]
+[STEAM_TAG:dust]
+[STEAM_TAG:entity]
+[STEAM_TAG:ui]
+[STEAM_TAG:reaction]
+[STEAM_TAG:building]
+[STEAM_TAG:rawless]
+[STEAM_TAG:grind]
+[STEAM_TAG:utility]
+[STEAM_TAG:qol]
+[STEAM_TAG:compatibility]
+
+[STEAM_DESCRIPTION:
+===================================================
+CHANGELOG v3.3.4: Module Engine Updates
+===================================================
+
+MODULE ENGINE
+- (MAJOR) Fixed an issue which caused save corruption due to modules to failing to be wiped from RAM while on HOTSAVE mode.
+- (MAJOR) Fixed a bug which caused the module engine pipeline to fire on boot instead of during the RM startup protocol.
+- (MAJOR) Made changes to RM core engine and module engine to ensure module asset updates will not interfere with prior indexing of materials on pre-existing save files, which allows module updates to add or remove injected index items such as materials and reactions without shifting the entire indexing order and ruining previous saves. As long as doing so does not cause conflict with raw files, modules should be able to add or remove any injected assets they choose and remain compatible with previous saves.
+- Fixed a bug which allowed RM confuse its list of registered listeners when switching between forts.
+- Added a suite of organic classes to recognized reagent/product types.
+
+]
+
+[STEAM_FILE_ID:3678145528]
